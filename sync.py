@@ -70,7 +70,7 @@ def main():
     parser = argparse.ArgumentParser(description="Periodically synchronizes two folders.")
     parser.add_argument("source", nargs="?", default="./source", help="Path to the source folder")
     parser.add_argument("replica", nargs="?", default="./replica", help="Path to the replica folder")
-    parser.add_argument("interval", nargs="?", type=int, default=60, help="Sync interval in seconds")
+    parser.add_argument("interval", nargs="?", type=int, default=10, help="Sync interval in seconds")
     parser.add_argument("log_file", nargs="?", default="./logs/sync.log", help="Path to the log file")
     
     args = parser.parse_args()
